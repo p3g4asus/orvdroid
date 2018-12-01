@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.percent.PercentRelativeLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/alloneBTNRLT">
+    <Button
+        android:id="@+id/learnIrBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/learnIrBTN"
+        app:layout_widthPercent="33%"/>
+    <Button
+        android:id="@+id/shortcutBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/learnIrBTN"
+        android:text="@string/shortcutBTN"
+        app:layout_widthPercent="33%"/>
+    <Button
+        android:id="@+id/timersBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/shortcutBTN"
+        android:text="@string/timersBTN"
+        app:layout_widthPercent="33%"/>
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.v7.widget.SearchView
+        android:id="@+id/keysSRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alloneBTNRLT"/>
+    <HorizontalScrollView
+        android:id="@+id/keysHSV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/keysSRV" >
+        <RadioGroup
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/keysRDG">
+
+            <RadioButton
+                android:id="@+id/keysAllRDB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="*" />
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <com.orvdroid.gui.views.RecyclerViewEmptySupportGrid
+        android:id="@+id/keysRCV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="40dp"
+        android:clipToPadding="false"
+        android:layout_below="@id/keysHSV" />
+    <TextView android:id="@+id/keysEmptyTXV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/keysRCV"
+        android:text="@string/ta_nokey"/>
+
+</RelativeLayout>

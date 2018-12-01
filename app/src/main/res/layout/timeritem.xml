@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:background="@drawable/rowselector"
+android:layout_height="?android:attr/listPreferredItemHeight"
+android:padding="6dip">
+
+<ImageView
+    android:id="@+id/actionICV"
+
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+
+    android:layout_alignParentTop="true"
+    android:layout_alignParentBottom="true"/>
+
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/firstTXV"
+
+    android:layout_toRightOf="@id/actionICV"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_above="@id/secondTXV"
+    android:layout_alignWithParentIfMissing="true"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+
+    android:gravity="center_vertical"/>
+
+<TextView
+    android:id="@+id/secondTXV"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/actionICV"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+
+    android:singleLine="true"
+    android:ellipsize="marquee"/>
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Orvdroid</string>
+    <string name="action_settings">Impostazioni</string>
+    <string name="exm_errs_exception">Rilevati alcuni errori nella configurazione dei dispositivi:</string>
+    <string name="exm_devm">%1$s</string>
+
+
+
+    <string name="exm_errp_conn_connecting">In connessione a %1$s:%2$d&#8230;</string>
+    <string name="exm_errr_conn_connectionerror">Errore di connessione a %1$s:%2$d. Riprovo tra %3$d sec</string>
+    <string name="exm_errr_conn_connectionlost">Connessione a %1$s:%2$d persa. Riprovo tra %3$d sec</string>
+    <string name="exm_errr_conn_unknownip">Host sconosciuto %1$s. Riprovo tra %3$d sec</string>
+    <string name="exm_errs_conn_invalidip">Host non valido</string>
+    <string name="exm_errs_conn_invalidport">Numero di porta non valido %1$s</string>
+    <string name="exm_errr_remcmdrv_remotemessage">%1$s(%3$s)->%2$d</string>
+    <string name="exm_errr_remcmdrv_actionlearnir">%1$s %2$s (%4$d B)</string>
+    <string name="exm_errr_remcmdrv_actionemitir">%1$s %2$s (%4$d B)</string>
+    <string name="exm_errr_remcmdrv_actionstateon">%1$s %1$s</string>
+    <string name="exm_errr_remcmdrv_actionstateoff">%1$s %2$s</string>
+    <string name="exm_errr_remcmdrv_actionirask">Premi %2$s verso %1$s</string>
+
+    
+    <string name="select">Seleziona</string>
+    <string name="settings">Impostazioni</string>
+    <string name="change_settings">Cambia Impostazioni</string>
+
+
+    <string name="title_activity_main">Orvdroid</string>
+
+    <string name="pref_conn_port_title">Porta TCP</string>
+    <string name="pref_conn_ip_title">Host</string>
+    <string name="pref_conn_retrydelay_title">Periodo riconnesione (s)</string>
+
+    <string name="drawer_header_email">fulminedipegasus@gmail.com</string>
+    <string name="drawer_header_hi">Hi</string>
+    <string name="learnIrBTN">Apprendi</string>
+    <string name="timersBTN">Timer</string>
+    <string name="ta_addtimer">Aggiungi</string>
+    <string name="ta_edittimer">Modifica</string>
+    <string name="ta_deltimer">Rimuovi</string>
+    <string name="ta_once">Una volta</string>
+    <string name="ta_repeat">Ripeti</string>
+    <string name="ta_mon">Lunedì</string>
+    <string name="ta_tue">Martedì</string>
+    <string name="ta_wed">Mercoledì</string>
+    <string name="ta_thu">Giovedì</string>
+    <string name="ta_fri">Venerdì</string>
+    <string name="ta_sat">Sabato</string>
+    <string name="ta_sun">Domenica</string>
+    <string name="ta_notimer">Nessun timer</string>
+    <string name="ta_on">Accendi</string>
+    <string name="ta_off">Spegni</string>
+    <string name="ta_nokey">Nessun Tasto</string>
+    <string name="s20">S20</string>
+    <string name="allone">AllOne</string>
+    <string name="ti_title">Gestione timer</string>
+    <string name="ti_discard">Annulla</string>
+    <string name="ti_neutral">Sh</string>
+    <string name="ti_ok">OK</string>
+    <string name="ka_device">Telecomando</string>
+    <string name="ka_key">Tasto</string>
+    <string name="drawer_open">Apri</string>
+    <string name="drawer_close">Chiudi</string>
+    <string name="exit">Esci</string>
+    <string name="pref_conn_infoperiod_title">Periodo refresh (s)</string>
+    <string name="pref_act_getinfo_title">GetInfo</string>
+    <string name="shortcutBTN">Sh</string>
+    <string name="li_title">Apprendi</string>
+    <string name="sh_title">Scorciatoie</string>
+    <string name="pref_dev_allonecolwidth_title">Colonna Tasti (dp)</string>
+    <string name="id_actualvalue">Valore attuale %1$s</string>
+    <string name="id_timezone">TimeZone</string>
+    <string name="id_timer">OAO</string>
+    <string name="action_key_1">K1</string>
+    <string name="action_key_5">K5</string>
+    <string name="action_key_10">K10</string>
+    <string name="action_sh_key_1">Sh K1</string>
+    <string name="action_sh_key_5">Sh K5</string>
+    <string name="action_sh_key_10">Sh K10</string>
+    <string name="pref_conn_udp_port_title">Porta UDP</string>
+    <string name="title_activity_send_to_uri">Invia Url</string>
+    <string name="pref_sh_type_title">Tipo Shortcut</string>
+    <string name="pref_sh_type_dlgtitle">Tipo Sh</string>
+    <string name="action_status_sh_on">Sh ON</string>
+    <string name="action_status_sh_off">Sh OFF</string>
+    <string name="current_time">Ora: %1$s</string>
+    <string name="days">g</string>
+    <string name="seconds">s</string>
+    <string name="action_sh_key_remote">Sh remote K</string>
+    <string name="shselect_dlg_title">Crea Sh</string>
+    <string name="shselect_dlg_ok">Crea</string>
+    <string name="ct10">MagicCube</string>
+    <string name="blackbean">BlackBean</string>
+    <string name="primelan">PrimeLan</string>
+    <string name="devicevirtual">Virtual</string>
+
+</resources>

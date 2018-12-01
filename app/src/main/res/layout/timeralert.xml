@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/timerLLT">
+    <com.orvdroid.gui.views.RecyclerViewEmptySupport
+        android:id="@+id/timerRCV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"/>
+    <TextView android:id="@+id/timerEmptyTXV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ta_notimer"/>
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/addTimerBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ta_addtimer" />
+        <Button
+            android:id="@+id/editTimerBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ta_edittimer" />
+        <Button
+            android:id="@+id/delTimerBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ta_deltimer" />
+    </LinearLayout>
+    <DatePicker
+        android:id="@+id/timerDP"
+        android:startYear="2014"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.percent.PercentRelativeLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner android:id="@+id/hhSPN"
+            app:layout_widthPercent="33%"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:entries="@array/hours"
+            android:spinnerMode="dialog" />
+        <Spinner android:id="@+id/mmSPN"
+            app:layout_widthPercent="33%"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/hhSPN"
+            android:entries="@array/minutes"
+            android:spinnerMode="dialog" />
+        <Spinner android:id="@+id/ssSPN"
+            app:layout_widthPercent="33%"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/mmSPN"
+            android:entries="@array/seconds"
+            android:spinnerMode="dialog" />
+    </android.support.percent.PercentRelativeLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/repeatRDB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ta_repeat" />
+
+        <RadioButton
+            android:id="@+id/onceRDB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/ta_once" />
+    </RadioGroup>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/monCBX"
+        android:text="@string/ta_mon"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tueCBX"
+        android:text="@string/ta_tue"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wedCBX"
+        android:text="@string/ta_wed"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/thuCBX"
+        android:text="@string/ta_thu"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/friCBX"
+        android:text="@string/ta_fri"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/satCBX"
+        android:text="@string/ta_sat"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sunCBX"
+        android:text="@string/ta_sun"/>
+
+</LinearLayout>
+</ScrollView>

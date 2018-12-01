@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <Spinner android:id="@+id/keysSPN"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:spinnerMode="dialog" />
+    <include  layout="@layout/keyrcv" android:id="@+id/keyemitrcvLLT" />
+</merge>

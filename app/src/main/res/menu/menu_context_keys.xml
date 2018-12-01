@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_key_1"
+        android:title="@string/action_key_1" />
+    <item android:id="@+id/action_key_5"
+        android:title="@string/action_key_5"/>
+    <item android:id="@+id/action_key_10"
+        android:title="@string/action_key_10" />
+    <item android:id="@+id/action_sh_key_1"
+        android:title="@string/action_sh_key_1" />
+    <item android:id="@+id/action_sh_key_5"
+        android:title="@string/action_sh_key_5"/>
+    <item android:id="@+id/action_sh_key_10"
+        android:title="@string/action_sh_key_10" />
+    <item android:id="@+id/action_sh_key_remote"
+        android:title="@string/action_sh_key_remote" />
+</menu>

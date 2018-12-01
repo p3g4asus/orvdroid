@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+		<com.orvdroid.gui.preference.AliasPreference
+			android:key="pref_conn_ip"
+			android:defaultValue="192.168.1.1"
+			android:title="@string/pref_conn_ip_title" />
+        <com.orvdroid.gui.preference.TCPPortPreference
+            android:key="pref_conn_port"
+            android:defaultValue="2802"
+            android:inputType="number"
+            android:title="@string/pref_conn_port_title" />
+        <com.orvdroid.gui.preference.TCPPortPreference
+            android:key="pref_conn_udp_port"
+            android:defaultValue="2803"
+            android:inputType="number"
+            android:title="@string/pref_conn_udp_port_title" />
+        <com.orvdroid.gui.preference.MaxSessionPointsPreference
+            android:key="pref_conn_retrydelay"
+            android:defaultValue="30"
+            android:inputType="number"
+            android:title="@string/pref_conn_retrydelay_title" />
+        <com.orvdroid.gui.preference.MaxSessionPointsPreference
+            android:key="pref_conn_infoperiod"
+            android:defaultValue="120"
+            android:inputType="number"
+            android:title="@string/pref_conn_infoperiod_title" />
+        <com.orvdroid.gui.preference.MaxSessionPointsPreference
+            android:key="pref_dev_allonecolwidth"
+            android:defaultValue="50"
+            android:inputType="number"
+            android:title="@string/pref_dev_allonecolwidth_title" />
+        <ListPreference android:title="@string/pref_sh_type_title"
+            android:key="pref_sh_type"
+            android:defaultValue="UDP"
+            android:entries="@array/pref_sh_type_entries"
+            android:entryValues="@array/pref_sh_type_entries"
+            android:dialogTitle="@string/pref_sh_type_dlgtitle">
+        </ListPreference>
+        <Preference
+            android:key="pref_act_getinfo"
+            android:persistent="false"
+            android:title="@string/pref_act_getinfo_title"  />
+</PreferenceScreen>
